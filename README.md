@@ -1,7 +1,7 @@
-# chromebookOS
-and os written entirely on a chromebook
+# fridayOS
+indev
 
-## chromebookOS todo
+## fridayOS todo
 **bold** = in progress
 - [ ] **literally make the entire os**
 - [ ] **print a string to screen** (done???)
