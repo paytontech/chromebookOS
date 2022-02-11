@@ -1,12 +1,10 @@
 # chromebookOS
-an os written entirely on a chromebook
---
-**name will likely change**
+and os written entirely on a chromebook
 
 ## chromebookOS todo
 **bold** = in progress
 - [ ] **literally make the entire os**
-- [ ] print a string to screen
+- [ ] **print a string to screen** (done???)
 - [ ] keyboard input
 - [ ] mouse input
 - [ ] shell
