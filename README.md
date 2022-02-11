@@ -1,5 +1,7 @@
 # chromebookOS
-and os written entirely on a chromebook
+an os written entirely on a chromebook
+--
+**name will likely change**
 
 ## chromebookOS todo
 **bold** = in progress
