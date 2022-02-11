@@ -44,7 +44,7 @@ mov al, 'G'
 int 0x10
 
 
-
+jmp $ ; loops forever
 
 
 ; boot stuff
