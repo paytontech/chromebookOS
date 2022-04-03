@@ -1,29 +1,27 @@
 [org 0x7c00]
 
+mov ah, 0x0e
+mov bx, string
 
-mov ah, 0x0e ;tells bios to do scrolling teletype
+;loop:
+;    inc al
+;    cmp al, 'Z' + 1
+;    je exit
+;    int 0x10
+;    jmp loop
+printString:
+    mov al, [bx]
+    cmp al, 0
+    je exit
+    int 0x10
+    inc bx
+    jmp printString
 
 
+exit:
+    jmp $
+string: 
+    db "Wow this is pretty neato as the kids say",0
 
-mov bx, the_secret
-add bx, 0x7c00
-mov al, [bx]
-int 0x10
-
-
-the_secret:
-    db "fridayOS supremacy",0
-
-
-jmp $ ; loops forever
-
-
-; boot stuff
-
-times 510-($-$$) db 0 ; fill boot sector with 0s
-
-dw 0xaa55 ; tell bios that this is an operating system
-
-; wait what
-; it was really that simple???
-; well ok then
+times 510-($-$$) db 0
+db 0x55, 0xaa
