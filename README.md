@@ -1,10 +1,12 @@
 # fridayOS
 indev
 
+## how to build
+
 ## fridayOS todo
 **bold** = in progress
 - [ ] **literally make the entire os**
-- [ ] **print a string to screen** (done???)
+- [x] print a string to screen
 - [ ] keyboard input
 - [ ] mouse input
 - [ ] shell
